@@ -11,6 +11,10 @@ fun main() {
 
 // Función que debe desarrollar la lógica para la solución del problema
 fun problema2() {
-    // Desarrolle aquí la lógica
+
+    val a= readLine()
+    val b= readLine()
+    println(a+b)
+
 
 }

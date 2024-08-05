@@ -11,6 +11,5 @@ fun main() {
 
 // Función que debe desarrollar la lógica para la solución del problema
 fun problema1() {
-    // Desarrolle aquí la lógica
-
+    println("Hola Mundo Kotlin!")
 }
