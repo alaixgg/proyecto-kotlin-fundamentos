@@ -11,10 +11,10 @@ fun main() {
 
 // Función que debe desarrollar la lógica para la solución del problema
 fun problema2() {
-
-    val a= readLine()
-    val b= readLine()
-    println(a+b)
-
-
+    println("Ingresa a:")
+    val a= readln().toInt()
+    println("Ingresa b:")
+    val b= readln() .toInt()
+    val c=a+b
+    println("$a + $b = $c")
 }
