@@ -11,20 +11,19 @@ fun main() {
 
 // Función que debe desarrollar la lógica para la solución del problema
 fun problema5() {
-    println("Numero de estudiantes: ")
-    val e = readLine()?.toIntOrNull()
-    println("Numero de manzanas:")
-    val m = readLine()?.toIntOrNull()
+    println("e:")
+    val estudiantes = readLine()?.toIntOrNull()
+    println("m:")
+    val manzanas = readLine()?.toIntOrNull()
 
-    if (e == null || m == null || m <= 0 ) {
-        println("Entrada inválida. Por favor ingrese números válidos para Numero de estudiantes y Numero de manzanas.")
+    if (estudiantes == null || manzanas == null || estudiantes <= 0) {
+        println("Entrada inválida. Por favor ingrese números válidos para número de estudiantes y número de manzanas.")
         return
     }
 
-    val manzanasEstudiante = m / e
-    val manzanasCanasta = m % e
+    val manzanasPorEstudiante = manzanas / estudiantes
+    val manzanasSobrantes = manzanas % estudiantes
 
-    println("Cada estudiante recibirá: $manzanasEstudiante manzanas.")
-    println("Quedarán en la canasta: $manzanasCanasta manzanas.")
-
+    println("Cada estudiante recibirá: $manzanasPorEstudiante manzanas.")
+    println("Quedarán en la canasta: $manzanasSobrantes manzanas.")
 }

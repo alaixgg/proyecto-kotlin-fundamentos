@@ -1,5 +1,7 @@
 package com.example.proyectokotlinfundamentos
 
+import kotlin.system.exitProcess
+
 // Nombre:
 // Fecha:
 // Descripción: Solución del Problema 7 de la guía de Kotlin fundamentos
@@ -11,6 +13,17 @@ fun main() {
 
 // Función que debe desarrollar la lógica para la solución del problema
 fun problema7() {
-    // Desarrolle aquí la lógica
 
+    println("¿Cuántos sonidos del grillo escuchaste por minuto?")
+    val sound = readlnOrNull()?.toDouble()
+
+    if (sound != null && sound >= 0 ) {
+        val temperature= (sound.div(4)).plus(40)
+
+        println("Dados los sonidos del grillo, la temperatura es de $temperature °F.")
+    }
+
+    else{
+        println("Seguro investigador, ¿un grillo puede hacer ese número de sonidos?")
+    }
 }
