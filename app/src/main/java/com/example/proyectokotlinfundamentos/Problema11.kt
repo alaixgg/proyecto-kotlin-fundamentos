@@ -1,8 +1,8 @@
 package com.example.proyectokotlinfundamentos
 
-// Nombre:
-// Fecha:
-// Descripción: Solución del Problema 11 de la guía de Kotlin fundamentos
+// Nombre: Andres Alaix
+// Fecha: 9 de agosto
+// Descripción: Solución del Problema 14 de la guía de Kotlin fundamentos
 
 // Función principal
 fun main() {
@@ -23,6 +23,13 @@ fun problema11() {
     println("Dame el valor del arriendo:")
     val arriendo = readlnOrNull()?.toInt()
 
-    
-
+    if (comida != null && electricidad != null && network != null && arriendo != null) {
+        val total = comida + electricidad + network + arriendo
+        if (total < presupuesto!!){
+            println("Vamos melos!")
+        } else {
+            println("Rayos estoy quebrado(a)!")
+        }
+    }
 }
+

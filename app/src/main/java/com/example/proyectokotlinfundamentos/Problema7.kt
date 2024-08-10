@@ -2,9 +2,9 @@ package com.example.proyectokotlinfundamentos
 
 import kotlin.system.exitProcess
 
-// Nombre:
-// Fecha:
-// Descripción: Solución del Problema 7 de la guía de Kotlin fundamentos
+// Nombre: Andres Alaix
+// Fecha: 9 de agosto
+// Descripción: Solución del Problema 14 de la guía de Kotlin fundamentos
 
 // Función principal
 fun main() {
